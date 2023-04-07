@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    transition: .3s all linear;
+    font-family: Gilroy, sans-serif;
+    font-style: normal;
+    color: #fff;
+}
+
+.container{
+    max-width: 1292px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+$font-stack: Helvetica, sans-serif;
+$dark-grey: #403C3B;
+$light-grey: #504B4A;
+$grey-text: #CFCFCF;
+$green: #618967;
+$green-bg: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+$grey-bg: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+$dark-black: #2E2B2C;
+
+main{
+    background: $grey-bg;
+    min-height: 200vh;
+    width: 100%;
+}
+
+
+
+@mixin text($fz, $fw, $lh, $col) {
+   font-size: $fz;
+   font-weight: $fw;
+   line-height: $lh;
+   color: $col;
+}
+
+.btn{
+    background: $green-bg;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    @include text(16px, 600px, 1.1, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+    &:hover{
+        background: #45684a;
+    }
+    
+}
+  
+
+
+@import 'header';
+@import 'begin';
+@import 'menu';
+@import 'form';
+
+
+
+
+
+

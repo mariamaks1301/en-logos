@@ -1,0 +1,121 @@
+.header{
+    padding: 23px 0 24px;
+    background: $dark-grey;
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    &__logo{
+        @include text(25px, 700, 25px, #fff);   
+        letter-spacing: 0.15em;
+        margin-right: 72px;
+    }
+    &__search{
+        position: relative;
+        margin-right: 30px;
+        &-icon-location{
+            position: absolute;
+            top: 50%;
+            left: 13px;
+            transform: translateY(-50%);
+        }
+        &-icon-search{
+            position: absolute;
+            top: 50%;
+            right: 13px;
+            transform: translateY(-50%);
+
+        }
+        &-field{
+            width: 555px;
+            height: 52px;
+            background: $light-grey;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            padding: 0 48px;
+            @include text(18px, 400, 21px, #fff);
+        }
+    }
+    &__contact{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        &-icon{
+            width: 32px;
+            height: 32px;
+            background: $green;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-text{
+            @include text(12px, 400, 21px, $grey-text);
+        }
+        &-phone{
+            @include text(16px, 500, 18px, #fff);
+        }
+    }
+    &__user{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        span{
+            @include text(16px, 500, 14px, #fff);
+
+        }
+    }
+    &__btn{
+        background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+        width: 149px;
+        height: 52px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+        &-text{
+            @include text(16px, 600, 17px, #fff);
+
+            
+
+
+        }
+        &-count{
+            @include text(14px, 600, 17px, $dark-black);
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            &:before{
+                content: '';
+                width: 2px;
+                height: 38px;
+                background: rgba(255, 255, 255, 0.3);
+
+                position: absolute;
+                top: -5px;
+                right: 40px;
+            }
+
+
+
+        }
+    }
+}

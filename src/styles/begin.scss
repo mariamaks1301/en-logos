@@ -1,0 +1,42 @@
+.begin{
+    background: url(../assets/images/begin-bg.png) center/cover no-repeat;
+    padding: 120px 0 178px;
+    &__content{
+        max-width: 650px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title{
+        font-family: 'Limelight', cursive;
+        text-transform: uppercase;
+        @include text(42px, 600, 1.2, #fff);
+        transform: rotate(-8.37deg);
+        margin-bottom: 40px;
+
+    }
+    &__subtitle{
+        font-family: 'Limelight', cursive;
+        text-transform: uppercase;
+        @include text(25px, 400, 28px, #fff);
+        transform: rotate(-8.37deg);
+        position: relative;
+        
+
+        &:before{
+            content: '';
+            width: 304px;
+            height: 40px;
+            background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+            transform: skew(-26deg);
+            position: absolute;
+            top: -20%;
+            left: 27%;
+            z-index: -1;
+
+
+        }
+
+
+    }
+}

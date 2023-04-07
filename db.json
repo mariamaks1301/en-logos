@@ -1,0 +1,26 @@
+{
+  "users": [
+    {
+      "email": "lana@mail.ru",
+      "password": "$2a$10$un53WqR9ho622Ics.VRKKuVesExRADpnKsFowlGnFuFxKC66m8VkK",
+      "id": 1
+    },
+    {
+      "email": "damir@mail.ru",
+      "password": "$2a$10$qsOultMSo69tZ/noTW8B3OdgCrbedQ2dRSXGvKpEpnTJprwe2bj6G",
+      "id": 2
+    },
+    {
+      "email": "karina@mail.ru",
+      "password": "$2a$10$vxCOROV8dNLIXWdqzLiYGuy/LeE3nnmj4kXg3qI9q.DW7ao4Aou6K",
+      "id": 3
+    },
+    {
+      "email": "itrun@mail.ru",
+      "password": "$2a$10$pd4aXO/sXGH.QQm.2UOISuEOVhk.5jeGgPH6Sz8ZneKyt4/mW6/hW",
+      "id": 4
+    }
+  ],
+  "products": [],
+  "sales": []
+}

@@ -1,0 +1,42 @@
+.menu{
+    padding: 29px 0;
+    border-bottom: 1px solid #FFFFFF30;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link{
+        @include text(18px, 500, 21px, $grey-text);
+        position: relative;
+        &:before{
+            content: '';
+            width: 0;
+            height: 2px;
+            background: $green;
+
+            position: absolute;
+            top: 48px;
+            left: 0;
+        }
+        &:hover{
+            color: #fff;
+            &:before{
+                transition: .2s all linear;
+                content: '';
+                width: 120%;
+                height: 2px;
+                background: $green;
+                border-radius: 10px;
+
+                position: absolute;
+                top: 48px;
+                left: -5px;
+
+            }
+
+           
+        }
+ 
+    }
+}
