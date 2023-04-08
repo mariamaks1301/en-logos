@@ -18,14 +18,7 @@ export const Context = (props) =>{
         .catch((err)=> console.log(err.message))
     }, [])
 
-    console.log(products)
-        
   
-
-   
-
-   
-
     const value = {
         user,
         setUser,
@@ -34,8 +27,6 @@ export const Context = (props) =>{
         
  
     }
-
-
 
 
     return <CustomContext.Provider value={value}>

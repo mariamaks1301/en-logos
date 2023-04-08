@@ -20,24 +20,16 @@
         padding: 41px 0 45px;
 
         &-address{
-            font-size: 14px;
-            line-height: 15px;
+            @include text(14px, 400, 1.1, #fff);
             margin-bottom: 20px;
             span{
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 15px;
-                color: #CFCFCF;
+                @include text(13px, 400, 1.1, $grey-text);
             }
         }
         &-email{
-            font-size: 14px;
-            line-height: 15px;
+            @include text(14px, 400, 1.1, #fff);
             span{
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 15px;
-                color: #CFCFCF;
+                @include text(13px, 400, 1.1, $grey-text);
             }
         }
     }
@@ -48,25 +40,19 @@
             column-gap: 33px;
         }
         &-btn{
-            padding: 15px 30px;
-            background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+            @include text(13px, 700, 1.2, #fff);
+            width: 210px;
+            height: 59px;
+            background: $green-bg;
             border-radius: 10px;
             white-space: nowrap;
-            font-size: 13px;
-            line-height: 16px;
-            color: #fff;
             cursor: pointer;
         }
-        &-title{
-            font-size: 23px;
-            line-height: 28px;
-            color: #fff;
+        &-link{
+            @include text(23px, 700, 1.2, #fff);
         }
-        &-subtitle{
-            font-weight: 400;
-            font-size: 13px;
-            line-height: 15px;
-            color: #CFCFCF;
+        &-text{
+            @include text(13px, 400, 1.1, $grey-text);
         }
 
     }
@@ -76,10 +62,7 @@
         justify-content: center;
 
         &-title{
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 19px;
-           
+            @include text(16px, 600, 1.1, #fff);           
         }
 
         &-icons{

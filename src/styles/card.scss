@@ -35,6 +35,8 @@
     &__desc{
         @include text(13px, 400, 1.1, $grey-text);
         margin-bottom: 15px;
+        height: 42px;
+        overflow: hidden;
 
 
     }

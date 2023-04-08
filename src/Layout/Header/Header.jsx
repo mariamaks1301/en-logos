@@ -25,7 +25,7 @@ const Header = () => {
             <div className="container">
                 <nav className='header__nav'>
                     <div className="header__left">
-                        <h1 className='header__logo'>LOGOS</h1>
+                        <h1 onClick={()=> navigate('/')} className='header__logo'>LOGOS</h1>
                         <div className='header__search'>
                             <span className='header__search-icon header__search-icon-location'>
                             <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +70,7 @@ const Header = () => {
                         </Link>
                     }
 
-                    <button className='header__btn'>
+                    <button className='header__btn btn'>
                         <span className='header__btn-text'>Cart</span>
                         <div className='header__btn-count'>
                                 4

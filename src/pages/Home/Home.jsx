@@ -19,10 +19,7 @@ const Home = () => {
             <FilterMeat/>
             <About/>
             <Map/>
-        
-         
 
-            
         </main>
     );
 };

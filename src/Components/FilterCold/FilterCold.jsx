@@ -10,7 +10,7 @@ import Card from "../Card/Card";
 const FilterCold = () => {
 
     const {products} = useContext(CustomContext);
-    console.log(products)
+
 
     return (
         <div className='productFilter'>

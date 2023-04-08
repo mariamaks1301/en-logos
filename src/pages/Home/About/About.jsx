@@ -11,7 +11,7 @@ const About = () => {
                         <p className="about__desc">
                             We are located in one of the most picturesque places in the city - on the banks of the river, this is your oasis within the city, where you can escape from the noisy and dusty metropolis. We are truly unique, because everything is thought out to the smallest detail: the project was built from a wild Transcarpathian log house, a fireplace in the main hall of the restaurant and panoramic windows overlooking the river, cozy gazebos on the river bank and the best view terrace, a tent with a seating for 200 people, a fabulous children's house and swimming pool.
                         </p>
-                        <button type='button' className="about__btn">VIEW MENU</button>
+                        <button type='button' className="about__btn btn">VIEW MENU</button>
                     </div>
                     <div className="about__cards">
                     <div className="about__card">
