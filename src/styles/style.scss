@@ -28,9 +28,9 @@ $green-bg: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
 $grey-bg: linear-gradient(360deg, #211F20 0%, #44403F 100%);
 $dark-black: #2E2B2C;
 
-main{
+.main{
     background: $grey-bg;
-    min-height: 200vh;
+    min-height: 400vh;
     width: 100%;
 }
 
@@ -65,6 +65,15 @@ main{
 @import 'begin';
 @import 'menu';
 @import 'form';
+@import 'products';
+@import 'card';
+@import 'map';
+@import 'about';
+@import 'productFilter';
+@import 'footer';
+
+
+
 
 
 

@@ -1,0 +1,26 @@
+.productFilter{
+    &__title{
+        padding: 40px 0 40px 20px;
+        text-transform: uppercase;
+        @include text(32px, 600, 1.1, #fff);
+        position: relative;
+
+        &:before{
+            content: '';
+            width: 4px;
+            height: 34px;
+            background: $green;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.mySwiper{
+    padding-bottom: 50px;
+    border-bottom: 1px solid #FFFFFF50;
+    
+}

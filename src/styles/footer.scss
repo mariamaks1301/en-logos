@@ -1,0 +1,32 @@
+.footer{
+    padding: 26px 0 30px;
+    background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+    
+    &__row{
+        display: flex;
+        align-items: center;
+        column-gap: 86px;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__info{
+        @include text(12px, 500, 1.1, $grey-text);
+    }
+    &__list{
+        display: flex;
+        column-gap: 40px;
+    }
+    &__text{
+        white-space: nowrap;
+        @include text(14px, 500, 1.1, #fff);
+    }
+    &__link{
+        @include text(20px, 500, 1.1, #fff);
+    }
+}
