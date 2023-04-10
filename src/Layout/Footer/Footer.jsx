@@ -24,7 +24,7 @@ const Footer = () => {
                                 <Link className='footer__link'>About Restaurant</Link>
                             </li>
                             <li className='footer__item'>
-                                <Link to={'/delivery'} className='footer__link'>Conditions for the delivery</Link>
+                                <Link to='/delivery' className='footer__link'>Conditions for the delivery</Link>
                             </li>
                             <li className='footer__item'>
                                 <Link to='/sales' className='footer__link'>Sales</Link>

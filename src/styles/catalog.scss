@@ -1,0 +1,30 @@
+.catalog{
+    padding: 40px 0;
+
+    &__content{
+        width: 100%;
+        display: flex;
+
+    }
+    &__aside{
+        width: 220px;
+    }
+    &__right{
+        width: calc(100% - 220px);
+    }
+    &__title{
+        @include text(24px, 700, 1.1, #fff);
+        margin-bottom: 20px;
+        &Link{
+            cursor: pointer;
+        }
+
+    }
+    &__row{
+       
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
