@@ -31,6 +31,10 @@
         {
             category: 'drinks',
             name: 'Drinks'
-        }   
+        },
+        {
+            category: 'dessert',
+            name: 'Dessert'
+        }     
 ]
 

@@ -1,13 +1,17 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import {FaRegUser} from 'react-icons/fa';
 import { CustomContext } from '../../utils/Context';
+import BasketZero from '../../Components/BasketZero/BasketZero';
 
 
 const Header = () => {
-    
+
+    const {basket} = useContext(CustomContext);
     const {user, setUser} = useContext(CustomContext);
     const navigate = useNavigate();
+
+    const [show, setShow] = useState(false);
 
 
     const logOutUser = ()=>{
@@ -70,16 +74,25 @@ const Header = () => {
                         </Link>
                     }
 
-                    <button className='header__btn btn'>
+                    <button onClick={()=>{
+                        if(basket.length){
+                            navigate('/basket')
+                        }else{
+                            setShow(true)
+                        }
+                    }} className='header__btn btn'>
                         <span className='header__btn-text'>Cart</span>
                         <div className='header__btn-count'>
-                                4
+                                {
+                                    basket.length
+                                }
                         </div>
                     </button>
                 </nav>
 
 
             </div>
+            <BasketZero show={show} setShow={setShow}/>
         </section>
     );
 };

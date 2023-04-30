@@ -1,4 +1,4 @@
-import React, { useRef, useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -6,9 +6,8 @@ import { Autoplay } from "swiper";
 import { CustomContext } from "../../utils/Context";
 import Card from "../Card/Card";
 
-const FilterMeat = () => {
-     const {products} = useContext(CustomContext);
- 
+const FilterDrinks = () => {
+    const {products} = useContext(CustomContext);
 
 
     return (
@@ -32,7 +31,7 @@ const FilterMeat = () => {
                 >
 
                 {
-                    products.filter(el => el.category === 'meat').map(item => (
+                    products.filter(el => el.category === 'drinks').map(item => (
                         <SwiperSlide key={item.id}>
                         <Card item={item}/>
                     </SwiperSlide> 
@@ -46,4 +45,4 @@ const FilterMeat = () => {
     );
 };
 
-export default FilterMeat;
+export default FilterDrinks;

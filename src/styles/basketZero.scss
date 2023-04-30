@@ -1,0 +1,50 @@
+.basketZero{
+    // display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #49454480 0%, #504B4A80 100%);
+    border-radius: 10px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__block{
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 10px;
+        max-width: 458px;
+        width: 100%;
+        height: 348px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        position: relative;
+
+        &-close{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+        }
+    }
+    &-icon{
+        svg{
+            width: 130px;
+        }
+    }
+    
+
+    &__btn{
+        width: 188px;
+        height: 51px;
+    }
+}

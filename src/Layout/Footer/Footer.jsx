@@ -1,9 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import {IoIosArrowUp} from 'react-icons/io';
 
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <section className='footer'>
+            <a href='#' className='footer__up' onClick={()=> navigate('/')}>
+               <IoIosArrowUp fill='black' fontSize={'22px'}/>
+            </a>
             <div className="container">
                 <div className="footer__row">
                     <div className="footer__left">
@@ -29,9 +34,7 @@ const Footer = () => {
                             <li className='footer__item'>
                                 <Link to='/sales' className='footer__link'>Sales</Link>
                             </li>
-                            <li className='footer__item'>
-                                <Link className='footer__link'>Add Dish</Link>
-                            </li>  
+                            
                         </ul>
 
                     </nav>

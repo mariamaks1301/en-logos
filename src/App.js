@@ -7,8 +7,12 @@ import Register from "./pages/Register/Register";
 import Login from "./pages/Login/Login";
 import Sales from "./pages/Sales/Sales";
 import Delivery from "./pages/Delivery/Delivery";
-import styles from './styles/style.scss';
-import Gilroy from '../src/fonts/Gilroy/stylesheet.css';
+import Product from "./pages/Product/Product";
+import AddProduct from "./pages/AddProduct/AddProduct";
+import Basket from "./pages/Basket/Basket";
+
+import './styles/style.scss';
+import  '../src/fonts/Gilroy/stylesheet.css';
 
 
 
@@ -19,7 +23,11 @@ function App() {
         <Route path={''} element={<Layout/>}>
           <Route path="/" element={<Home/>}/>
           <Route path="/catalog/:category/" element={<Catalog/>}/>
+          <Route path="/catalog" element={<Catalog/>}/>
           <Route path="/sales" element={<Sales/>}/>
+          <Route path="/product/:id" element={<Product/>}/>
+          <Route path="/product/add" element={<AddProduct/>}/>
+          <Route path="basket" element={<Basket/>}/>
           <Route path="/delivery" element={<Delivery/>}/>
           <Route path="/*" element={<NotFount/>}/>
 

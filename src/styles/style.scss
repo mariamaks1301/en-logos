@@ -11,6 +11,9 @@
     font-style: normal;
     color: #fff;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 .container{
     max-width: 1292px;
@@ -88,6 +91,16 @@ $dark-black: #2E2B2C;
 @import 'footer';
 @import 'delivery';
 @import 'catalog';
+@import 'product';
+@import 'addProduct';
+@import 'basket';
+@import 'basketZero';
+@import 'addToOrder';
+
+
+
+
+
 
 
 

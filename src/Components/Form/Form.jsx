@@ -5,10 +5,12 @@ import {FaPencilAlt} from 'react-icons/fa';
 import {BsEyeFill, BsFillEyeSlashFill} from 'react-icons/bs';
 import axios from '../../utils/axios';
 import { CustomContext } from '../../utils/Context';
+import InputMask from 'react-input-mask';
 
 const Form = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
     const [eye, setEye] = useState(false);
 
     const {user, setUser} = useContext(CustomContext);
@@ -75,6 +77,26 @@ const Form = () => {
                         },
                     })} className='form__field' onChange={(e)=>setEmail(e.target.value)} type="email" placeholder='Enter email' />
                     <span className='form__error'>{errors.email && errors.email.message}</span>
+                </label>
+
+                <label className='form__label'>
+                    <InputMask 
+                        mask={`+\\9\\96(999)99-99-99`}
+                        type='tel'
+                        {...register('phone', {
+                            required: {
+                                value: true,
+                                message: 'Это поле обязательное',
+                            },
+                            pattern: {
+                                value: /^\+996\(\d{3}\)\d{2}-\d{2}-\d{2}$/,
+                                message: 'Заполните номер телефона',
+                            },
+                        })}
+                        className='form__field'
+                        placeholder={'+996 (555) 55-55-55'}
+                    />
+                    <p className='form__error'>{errors.phone && errors.phone.message}</p>
                 </label>
    
          

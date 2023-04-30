@@ -1,0 +1,12 @@
+.addToOrder{
+    &__title{
+       &:before{
+        display: none;
+       }
+    }
+    &__block{
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+
+    }
+
+}
