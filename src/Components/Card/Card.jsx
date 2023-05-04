@@ -42,7 +42,7 @@ const Card = ({item}) => {
                                     {basket.find(product => product.id === item.id).count}
                                 </div>
                             </div>
-                        :   <div className="card__block-row">
+                        :   <div className="card__block-row card__block-row-buy">
                                 <p className="card__price">{item.price} $</p>
                                 <button onClick={() => addBasket(item)} type='button' className="card__btn btn">
                                     Add to Cart

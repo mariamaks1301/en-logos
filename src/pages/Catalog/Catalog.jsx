@@ -61,10 +61,15 @@ const Catalog = () => {
             <div className="container">
                 <div className="catalog__content">
                     <aside className='catalog__aside'>
-                        
-                        <CategorySelect/>
-                        <OrderSelect order={order} setOrder={setOrder}/>
-                        <TitleSearch title={title} setTitle={setTitle}/>
+                        <div className='catalog__aside-block catalog__aside-block-1'>   
+                            <CategorySelect/>
+                        </div>
+                        <div className='catalog__aside-block catalog__aside-block-2'>
+                            <OrderSelect order={order} setOrder={setOrder}/>                          
+                        </div>
+                        <div className='catalog__aside-block catalog__aside-block-3'>
+                            <TitleSearch title={title} setTitle={setTitle}/>
+                        </div>
 
                     </aside>
                     <div className='catalog__right'>

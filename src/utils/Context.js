@@ -8,6 +8,7 @@ export const Context = (props) =>{
 
      const [products, setProducts] = useState([]);
      const [basket, setBasket] = useState([]);
+     const [burger, setBurger] = useState(false);
 
 
     useEffect(()=>{
@@ -79,6 +80,8 @@ export const Context = (props) =>{
         plusItem,
         minusItem,
         delBasket,
+        burger,
+        setBurger
         
     }
 

@@ -79,3 +79,19 @@
   
    
 }
+@media (max-width: 992px){
+    .content{
+        padding-top: 100px;
+    }
+}
+@media (max-width: 550px){
+    .content{
+        padding-top: 60px;
+    }
+    .form{
+        padding: 0 15px;
+        &__field{
+            margin-bottom: 10px;
+        }
+    }
+}

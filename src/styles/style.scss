@@ -33,7 +33,7 @@ $dark-black: #2E2B2C;
 
 .main{
     background: $grey-bg;
-    min-height: 400vh;
+    min-height: 100vh;
     width: 100%;
 }
 .layout{
@@ -44,8 +44,6 @@ $dark-black: #2E2B2C;
     background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
     
 }
-
-
 
 @mixin text($fz, $fw, $lh, $col) {
    font-size: $fz;
@@ -77,6 +75,23 @@ $dark-black: #2E2B2C;
     height: 1px;
   }
 
+  @media (max-width: 1200px){
+    .container{
+      max-width: 970px;
+    }
+  }
+  @media (max-width: 992px){
+    .container{
+      max-width: 980px;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .container{
+      max-width: none;
+    }
+  }
+
 
 @import 'header';
 @import 'begin';
@@ -96,6 +111,8 @@ $dark-black: #2E2B2C;
 @import 'basket';
 @import 'basketZero';
 @import 'addToOrder';
+@import 'burger';
+
 
 
 

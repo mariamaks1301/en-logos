@@ -52,19 +52,19 @@ const Delivery = () => {
                 <div className="delivery__info">
                     <div className="delivery__info-row">
                         <div className="delivery__work-time">
-                            <h3 className='delivery__info-title'>График работы доставки:</h3>
-                            <p className='delivery__info-desc'>с 10:00-21:00</p>
+                            <h3 className='delivery__info-title'>Delivery work schedule:</h3>
+                            <p className='delivery__info-desc'>from 10a.m to 9p.m</p>
                         </div>
                         <div className="delivery__caffee-time">
-                            <h3 className='delivery__info-title'>График работы кафе:</h3>
-                            <p className='delivery__info-desc'>с 8:00-21:00</p>
+                            <h3 className='delivery__info-title'>Cafe opening hours:</h3>
+                            <p className='delivery__info-desc'>from 8a.m to 9p.m</p>
                         </div>
                     </div>
-                    <h3 className='delivery__info-title'>Минимальный заказ:</h3>
+                    <h3 className='delivery__info-title'>Minimum order:</h3>
                     <p className="delivery__info-desc">
-                        Бесплатная доставка пешим курьером при сумме заказа от 400 ₽
-                        Доставка оператором такси от любой суммы заказа - по тарифам 
-                        перевозчика.
+                        Free delivery by foot courier for orders over 35$
+                        Delivery by a taxi operator from any amount of the order - according to tariffs
+                        carrier.
                     </p>
 
                 </div>

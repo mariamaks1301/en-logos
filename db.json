@@ -848,33 +848,33 @@
   "delivery": [
     {
       "id": 1,
-      "title": "У наших курьеров всегда должна быть сдача!",
-      "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
+      "title": "Our couriers must always have change!",
+      "answer": "We monitor the quality of our work very closely, so if you have any comments or suggestions, be sure to let us know."
     },
     {
       "id": 2,
-      "title": "Вам что-то не довезли?",
-      "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
+      "title": "Were you missing something?",
+      "answer": "We monitor the quality of our work very closely, so if you have any comments or suggestions, be sure to let us know."
     },
     {
       "id": 3,
-      "title": "Не понравился продукт?",
-      "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
+      "title": "Didn't like the product?",
+      "answer": "We monitor the quality of our work very closely, so if you have any comments or suggestions, be sure to let us know."
     },
     {
       "id": 4,
-      "title": "Если появились замечания",
-      "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
+      "title": "If there are comments",
+      "answer": "We monitor the quality of our work very closely, so if you have any comments or suggestions, be sure to let us know."
     },
     {
       "id": 5,
-      "title": "Оплата Visa, MasterCard и МИР",
-      "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
+      "title": "Payment by Visa, MasterCard and MIR",
+      "answer": "We monitor the quality of our work very closely, so if you have any comments or suggestions, be sure to let us know."
     },
     {
       "id": 6,
-      "title": "Реквизиты",
-      "answer": "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам"
+      "title": "Requisites",
+      "answer": "We monitor the quality of our work very closely, so if you have any comments or suggestions, be sure to let us know."
     }
   ]
 }

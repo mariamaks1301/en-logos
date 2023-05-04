@@ -46,3 +46,40 @@
         @include text(20px, 500, 1.1, #fff);
     }
 }
+
+@media (max-width: 870px){
+    .footer{
+        &__row{
+            column-gap: 80px;
+        }
+        &__list{
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+        
+    }
+
+}
+@media (max-width: 560px){
+    .footer{
+        &__row{
+            column-gap: 50px;
+        }
+    }
+
+}
+
+@media (max-width: 592px){
+    .footer{
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__link{
+            font-size: 18px;
+        }
+    }
+
+}
+

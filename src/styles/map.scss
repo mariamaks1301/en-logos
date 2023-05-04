@@ -4,7 +4,8 @@
     z-index: 1;
 
     &__contacts{
-        width: 45%;
+        width: 56%;
+        min-width: 532px;
         background: #2E2B2C;
         box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15);
         border-radius: 15px;
@@ -90,4 +91,30 @@
 
     }
     
+}
+
+@media (max-width: 872px){
+    .map{
+        padding: 40px 0;
+    }
+}
+@media (max-width: 557px){
+    .map{
+        &__contact-row {
+            column-gap: 33px;
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 15px;
+        }
+        &__contacts{
+            min-width: 340px;
+            max-width: 400px;
+            width: 100%;
+            padding: 15px 10px;
+        }
+        &__info{
+            padding: 15px 0;
+        }
+        
+    }
 }
