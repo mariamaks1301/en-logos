@@ -2,7 +2,7 @@
   "name": "logos",
   "version": "0.1.0",
   "engines": {
-    "node": "14.17.0"
+    "node": "18.15.0"
   },
   "private": true,
   "dependencies": {
