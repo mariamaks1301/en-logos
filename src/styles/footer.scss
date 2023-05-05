@@ -83,3 +83,16 @@
 
 }
 
+@media (max-width: 520px){
+    .footer__up{
+        top: -30px;
+    }
+    .footer__list {
+        align-items: baseline;
+        gap: 15px;
+    }
+    .footer__row {
+        column-gap: 24px;
+    }
+}
+

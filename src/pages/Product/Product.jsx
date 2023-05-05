@@ -24,9 +24,9 @@ const Product = () => {
                     <span className='product__back-icon'>
                         <HiOutlineChevronLeft style={{color: '#fff'}}/>
                     </span>
-                    <span className='product__back-text'>Вернуться назад</span>
+                    <span className='product__back-text'>Go back</span>
                 </div>
-                <h2 className='product__title'>Продукт не найден!</h2>
+                <h2 className='product__title'>The dish not found!</h2>
             </div>
         )
     }
@@ -38,10 +38,12 @@ const Product = () => {
                     <span className='product__back-icon'>
                         <HiOutlineChevronLeft style={{color: '#fff'}}/>
                     </span>
-                    <span className='product__back-text'>Вернуться назад</span>
+                    <span className='product__back-text'>Go back</span>
                 </div>
                 <div className="product__row">
-                    <img className='product__img' src={`${product.image[0] === '.' ? '../' : ''}${product.image}`} alt={product.title} />
+                    <div className='product__block'>
+                        <img className='product__img' src={`${product.image[0] === '.' ? '../' : ''}${product.image}`} alt={product.title} />
+                    </div>
                     <div className='product__info'>
                         <h2 className='product__title'>{product.title}</h2>
                         <p className="product__description">{product.description}</p>
@@ -59,28 +61,33 @@ const Product = () => {
 
                                 </span>
                             </button>
-                            <p className="product__price">{product.price} ₽</p>
+                            <p className="product__price">{product.price} $</p>
                         </div>
                         <div className="product__row product__row-nutrition">
                             <div className='product__nutrition'>
-                                <p className='product__nutrition-desc'>Белки</p>
+                                <p className='product__nutrition-desc'>Proteins</p>
                                 <p className='product__nutrition-num'>{product.protein}</p>
                             </div>
                             <div className='product__nutrition'>
-                                <p className='product__nutrition-desc'>Жиры</p>
+                                <p className='product__nutrition-desc'>Fats</p>
                                 <p className='product__nutrition-num'>{product.fats}</p>
                             </div>
                             <div className='product__nutrition'>
-                                <p className='product__nutrition-desc'>Углеводы</p>
+                                <p className='product__nutrition-desc'>Carb.</p>
                                 <p className='product__nutrition-num'>{product.carbohydrates}</p>
                             </div>
                             <div className='product__nutrition'>
-                                <p className='product__nutrition-desc'>Ккал</p>
+                                <p className='product__nutrition-desc'>Ccal</p>
                                 <p className='product__nutrition-num'>{product.calories}</p>
                             </div>
                             <div className='product__nutrition'>
                                 <p className='product__nutrition-desc'>Ккал</p>
                                 <p className='product__nutrition-num'>{product.weight}</p>
+                            </div>
+                        </div>
+                        <div className='product__nutrition-mobile'>
+                            <div>
+                                Ccal: {product.calories}/{product.protein}/{product.fats}/{product.carbohydrates}
                             </div>
                         </div>
 
