@@ -60,7 +60,7 @@ const Basket = () => {
                                             </svg>
                                         </button>
                                     </div>
-                                    <p className='basket__item-price'>{item.price * item.count} ₽</p>
+                                    <p className='basket__item-price'>{item.price * item.count} $</p>
                                     <button className='basket__btn' type='button' onClick={()=>delBasket(item.id)}>
                                         <span>
                                             <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
