@@ -19,8 +19,8 @@ const Product = () => {
 
     if(JSON.stringify(product) === '{}'){
         return (
-            <div className="container">
-                <div onClick={()=> navigate(-1)} className="product__back" >
+            <div onClick={()=> navigate(-1)} className="container" >
+                <div  className="product__back" >
                     <span className='product__back-icon'>
                         <HiOutlineChevronLeft style={{color: '#fff'}}/>
                     </span>
