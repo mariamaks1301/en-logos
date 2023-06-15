@@ -16,7 +16,7 @@ const Basket = () => {
     return (
         <section className='basket'>
             <div className="container">
-                <Link to='/cotalog' className='basket__back'>
+                <Link to='/catalog' className='basket__back'>
                     <span className='basket__back-icon'>
                         <HiOutlineChevronLeft style={{color: '#fff', marginTop: '5px'}}/>
                     </span>
