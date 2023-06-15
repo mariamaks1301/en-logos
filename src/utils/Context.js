@@ -24,7 +24,7 @@ export const Context = (props) =>{
    
 
       useEffect(()=>{
-         axios('http://localhost:3004/products')
+         axios('/products')
              .then(({data})=> setProducts(data))
              .catch((err)=> console.log(err.message))
       }, [])
